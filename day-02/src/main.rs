@@ -14,7 +14,7 @@ fn main() {
 }
 
 
-fn solve(input: &String) -> i32 {
+fn solve(input: &str) -> i32 {
     let mut twos = 0;
     let mut threes = 0;
 
