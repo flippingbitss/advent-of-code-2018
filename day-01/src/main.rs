@@ -17,14 +17,14 @@ fn main() {
 }
 
 
-fn solve_part_1(input: &String) -> i32 {
+fn solve_part_1(input: &str) -> i32 {
     input.lines()
         .filter_map(|x| x.parse::<i32>().ok())
         .sum()
 }
 
 
-fn solve_part_2(input: &String) -> i32 {
+fn solve_part_2(input: &str) -> i32 {
     let mut sum = 0;
     let mut seen = HashSet::new();
 
