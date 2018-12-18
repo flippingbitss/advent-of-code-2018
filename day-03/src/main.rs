@@ -59,7 +59,7 @@ fn main() {
 
 fn solve_part_1(map: &Map) -> i32 {
     map.values()
-        .fold(0, |acc, c: &i32| acc + (*c > 1) as i32)
+        .fold(0, |acc, &c| acc + (c > 1) as i32)
 }
 
 fn solve_part_2(map: &Map, rects: &[Rect]) -> Option<i32> {
